@@ -1,16 +1,7 @@
 import React from "react";
 import { render } from "react-dom";
+import Pet from "./Pet";
 
-//creating the rubber stamp
-const Pet = ({ name, animal, breed }) => {
-  return React.createElement("div", {}, [
-    React.createElement("h1", {}, name),
-    React.createElement("h2", {}, animal),
-    React.createElement("h2", {}, breed),
-  ]);
-};
-
-//stamping it 3 times
 const App = () => {
   return React.createElement("div", {}, [
     React.createElement("h1", {}, "Adopt me!"),
